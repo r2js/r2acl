@@ -19,7 +19,7 @@ describe('r2acl', () => {
 
 function dropDatabase(done) {
   this.timeout(0);
-  app.service('Mongoose').connection.db.dropDatabase();
+  app.service('Mongoose').connection.dropDatabase();
   done();
 }
 
